@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <title>BADASS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="text/javascript" ></script>
+</head>
+
+<body onload="display_table_data()">
+
+    <header>
+        <b>$ EXPENSE TRACKER $</b>
+    </header>
+
+<div class="grid-container">
+
+<main>
+  
+
+    <table id="t1">
+
+
+</table>
+
+   
+
+    
+</main>
+
+<div class="AREA1">
+
+<form onsubmit="save_data(event)">
+<h2>Add Expenses</h2>
+
+<label for="fname">Expense type :</label>
+
+<select name="expense_type" id="expense_type" required>
+    <option value="">Select</option>
+    <option value="groceries">groceries</option>
+    <option value="milk">milk</option>
+    <option value="meat">meat</option>
+    <option value="fruits">fruits</option>
+    <option value="gas">gas</option>
+    <option value="vegetables">vegetables</option>
+    <option value="juice">juice</option>
+    <option value="chocolates and icecreams">chocolates and icecreams</option>
+    <option value="swiggy/zomato">swiggy/zomato</option>
+    <option value="medical expenses">medical expenses</option>
+    <option value="travel expenses">travel expenses</option>
+    <option value="petrol/diesel">petrol/diesel</option>
+    <option value="house maintenance">house maintenance</option>
+    <option value="other expenses">other expenses</option>
+  </select>
+
+<label for="lname">DATE</label>
+
+<input type="date" id="expense_date" required name="expense_date">
+
+<label for="amt">AMOUNT </label>
+
+<input type="number" id="amount" required step="0.01">
+
+<button type="submit" >ADD</button>
+
+
+</form>
+
+<!--<pre>
+    "WE ALL LIVE IN
+     SUSPENSE FORM
+     DAY TO DAY;
+     IN OTHER WORDS
+     YOU ARE THE HERO
+     OF YOUR OWN STORY"
+</pre>-->
+
+</div>
+
+<div class="AREA2">
+
+    
+</div>
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>

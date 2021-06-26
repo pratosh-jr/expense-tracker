@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    height: 1100px;
+    font-family: cursive;
+    background-image: url("back.jpg");;
+}
+
+header {
+
+background-color:mediumseagreen ;
+text-align: center;
+padding: 20px;
+font-size: xx-large;
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .grid-container {
+  
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas:"AREA1"
+                            "AREA2"
+                            "main" ;
+        height: 300px;                       
+    
+    }
+
+    #t1,th,td {
+        border: 2px solid darkslategray;
+        border-collapse: collapse;
+        padding: 1  0px;
+        color: black;
+    }
+} 
+
+@media only screen and (min-width: 600px) {
+    
+    .grid-container {
+  
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 35% 75%;
+        grid-template-areas:" main AREA1"
+                            "main AREA2" ;
+        height: 900px;                       
+    
+    }
+
+    #t1,th,td {
+        border: 2px solid darkslategray;
+        border-collapse: collapse;
+        padding: 20px;
+        color: black;
+    }
+} 
+
+
+
+main {
+    grid-area: main;
+    background-color:white ;
+    color:black; 
+    margin: 5%;
+}
+
+#t1 {
+    width: 100%;
+}
+
+
+
+
+#t1 tr:nth-child(odd) {
+        background-color:peru ;
+}
+
+
+#t1 {
+
+    background-color:beige 
+       
+}
+
+#t1 th {
+    width: 20%;
+    height: 15%;
+    background-color: teal;
+}
+
+#t1 td {
+   text-align: center;
+}
+
+
+.AREA1 {
+    grid-area: AREA1;
+    background-color:steelblue ;
+    opacity: .9;
+}
+
+.AREA1 form {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.AREA1 form label {
+    display: block;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+
+.AREA1 form button {
+    display: block;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+.AREA1  pre {
+    text-align: center;
+    padding-top: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-right: 80px;
+}
+
+.AREA2 {
+    grid-area: AREA2;
+
+}
